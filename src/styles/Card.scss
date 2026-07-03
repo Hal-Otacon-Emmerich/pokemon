@@ -1,0 +1,8 @@
+@use 'variables/variables' as *;
+@use 'base/colors' as colors;
+
+.card {
+    background-color: colors.$bg-card-white;
+    box-shadow: $shadow-md;
+    border-radius: $rounded-lg;
+}

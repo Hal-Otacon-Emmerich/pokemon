@@ -1,0 +1,7 @@
+@use "variables/variables" as *;
+
+.input {
+    padding: $p-8;
+    border-radius: $rounded-md;
+    box-shadow: $shadow-md;
+}

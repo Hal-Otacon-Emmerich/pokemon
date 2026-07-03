@@ -1,0 +1,12 @@
+@use "base/colors" as base;
+@use "layout/layout" as layout;
+@use "variables/variables" as vars;
+
+body {
+    background-color: base.$bg-white;
+}
+
+main {
+    @include layout.flex-layout(column, nowrap);
+    gap: vars.$p-16;
+}
