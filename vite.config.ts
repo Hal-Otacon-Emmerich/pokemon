@@ -10,6 +10,9 @@ export default defineConfig({
       '@components': path.resolve(__dirname, './src/components'),
       '@types': path.resolve(__dirname, './src/types'),
       '@styles': path.resolve(__dirname, './src/styles'),
+      '@services': path.resolve(__dirname, './src/services'),
+      '@store': path.resolve(__dirname, './src/store'),
+      '@constants': path.resolve(__dirname, './src/constants'),
     },
   },
 })
