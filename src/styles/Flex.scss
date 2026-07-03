@@ -1,6 +1,6 @@
 @use "layout/layout" as *;
 @use "variables/variables" as *;
 .flex {
-    @include flex-layout(row, nowrap);
+    @include flex-layout(row, wrap);
     gap: $p-16;
 }

@@ -5,16 +5,23 @@
 .pokemon {
     @include flex-layout(column, nowrap);
     padding: $p-12;
+    min-width: 200px;
+    cursor: pointer;
     &-number {
         text-align: end;
         color: $id-text;
         padding: $p-8;
         font-size: $font-md;
     }
+    &-image{
+        align-self: center;
+    }
     &-name {
         color: $dark-text;
         padding: $p-8;
         font-size: $font-lg;
+        font-weight: bold;
+        text-transform: capitalize;
     }
     &-tags-container {
         @include flex-layout(row, wrap);
