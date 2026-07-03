@@ -1,0 +1,26 @@
+@use "layout/layout" as *;
+@use "base/typography" as *;
+@use "variables/variables" as *;
+
+.pokemon {
+    @include flex-layout(column, nowrap);
+    padding: $p-12;
+    &-number {
+        text-align: end;
+        color: $id-text;
+        padding: $p-8;
+        font-size: $font-md;
+    }
+    &-name {
+        color: $dark-text;
+        padding: $p-8;
+        font-size: $font-lg;
+    }
+    &-tags-container {
+        @include flex-layout(row, wrap);
+        &_tag {
+            font-size: $font-sm;
+            margin-left: $p-4;
+        }
+    }
+}
